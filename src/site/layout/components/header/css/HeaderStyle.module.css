@@ -1,0 +1,13 @@
+/* Estilo para los enlaces de navegación */
+.header-navlink {
+    text-decoration: none;
+    font-weight: 600;
+    color: #808080;
+}
+.header-navlink:hover{
+    color: #9D00F5;
+}
+.header-navlink-active {
+    color: #9D00F5;
+    font-weight: 600;
+}
