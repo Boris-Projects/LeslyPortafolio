@@ -6,7 +6,7 @@ import style from '../css/InicioStyle.module.css';  // Importa el archivo CSS
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/swiper-bundle.css';
 
@@ -17,16 +17,30 @@ import lrIcon from '../img/lr-icon.png';
 import wIcon from '../img/ws-icon.png';
 import fIcon from '../img/f-icon.png';
 import lesly from '../img/lesly.png';
+import web from '../img/web.png';
 
 import imgCliente1 from '../img/cliente1.png';
 import imgCliente2 from '../img/cliente2.png';
+import imgCliente3 from '../img/cliente3.png';
+import imgCliente4 from '../img/cliente4.png';
+import imgCliente5 from '../img/cliente5.png';
+import imgCliente6 from '../img/cliente6.png';
+import imgCliente7 from '../img/cliente7.png';
+import imgCliente8 from '../img/cliente8.png';
+import imgCliente9 from '../img/cliente9.png';
+import imgCliente10 from '../img/cliente10.png';
+import imgCliente11 from '../img/cliente11.png';
+import imgCliente12 from '../img/cliente12.png';
+
+import proyecto1 from '../img/proyecto1.png';
+import qrPortafolio from '../img/qr-portafolio.png';
 
 export const Inicio = () => {
     return (
         <>
             <section className={style.sectInicio}>
                 <Grid container>
-                    <Grid size={{ xs: 6, md: 5 }} sx={{ padding: '50px 15px'}} className={style.boxLeft}>
+                    <Grid size={{ xs: 6, md: 5 }} sx={{ padding: '50px 15px 0 15px' }} className={style.boxLeft}>
                         <Box className={style.boxCard}>
                             <h5 className={style.aboutMe}>Acerca de mi</h5>
                             <Box className={style.boxHead}>
@@ -53,7 +67,7 @@ export const Inicio = () => {
                             
                         </Box>
                     </Grid>
-                    <Grid size={{ xs: 6, md: 7 }} sx={{ padding: '50px 15px'}} className={style.boxRight}>
+                    <Grid size={{ xs: 6, md: 7 }} sx={{ padding: '50px 15px 0 15px' }} className={style.boxRight}>
                         
                         <Box className={style.boxHead}>
                             <h2>Portafolio</h2>
@@ -61,6 +75,7 @@ export const Inicio = () => {
                         <Grid container spacing={3} className={style.boxBody} >
                             <Grid size={8} className={style.boxWeb}>
                                 <h4>Web</h4>
+                                <img src={web} alt="" width="100%"/>
                             </Grid>
                             <Grid size={4} className={style.boxSkills}>
                                 <ul>
@@ -76,7 +91,7 @@ export const Inicio = () => {
                         <Grid container className={style.boxFoot}>
                             <Grid size={4} className={style.boxClientes}>
                                 <Swiper
-                                    modules={[Navigation, Pagination, Autoplay]} // Añade los módulos que necesites
+                                    modules={[Navigation, Autoplay]} // Añade los módulos que necesites
                                     loop={true} // Activa el bucle infinito
                                     autoplay={{
                                         delay: 3000, // Cambia automáticamente cada 3 segundos
@@ -88,16 +103,31 @@ export const Inicio = () => {
                                     slidesPerView={1} // Muestra una slide a la vez
                                 >
                                     {/* Slides */}
-                                    <SwiperSlide>
-                                        <img src={ imgCliente1 } alt="Slide 1" width="100%" />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={ imgCliente2 } alt="Slide 2" width="100%" />
-                                    </SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente1 } alt="Slide 1" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente2 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente3 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente4 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente5 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente6 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente7 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente8 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente9 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente10 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente11 } alt="Slide 2" width="100%" /></SwiperSlide>
+                                    <SwiperSlide><img src={ imgCliente12 } alt="Slide 2" width="100%" /></SwiperSlide>
                                 </Swiper>
+                                
                             </Grid>
-                            <Grid size={4} className={style.boxProyectos}>
+                            <Grid container size={8} className={style.boxProyectos}>
+                                <Grid size={6} className={style.imgProyect}>
+                                    <img src={ proyecto1 } alt=""  width="100%"/>
+                                </Grid>
 
+                                <Grid size={6} className={style.qrPortafolio}>
+                                    <img src={ qrPortafolio } alt="" width="100%" />
+                                    <h3>Proyectos</h3>
+                                    <a href="https://drive.google.com/drive/folders/1uPkGd5kr6S9daSsLVyAisU7seDoxzC73" target='_blank'>IR</a>
+                                </Grid>
                             </Grid>
                         </Grid>
                         

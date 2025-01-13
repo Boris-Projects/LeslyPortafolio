@@ -29,11 +29,11 @@ export const HeaderSite = () => {
                     >
                         <NavLink to="/portafolio" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }>Portafolio</NavLink>
 
-                        <NavLink to="/podcast" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }>Podcast</NavLink>  
+                        <NavLink to="/podcast" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }>CV</NavLink>  
 
-                        <NavLink to="/research" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }>Research</NavLink>
+                        <NavLink to="/research" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }>Marcas</NavLink>
 
-                        <NavLink to="/clientes" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }> Clientes </NavLink>
+                        <NavLink to="/clientes" className={({ isActive }) => isActive ? style['header-navlink-active'] : style['header-navlink'] }> Proyectos </NavLink>
                     </Box>
 
                 </Grid>
