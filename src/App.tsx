@@ -5,7 +5,7 @@ import { AppRoutes } from './routes/AppRoutes';
 function App() {
   return (
       <>
-        <BrowserRouter basename="/LeslyPortafolio">
+        <BrowserRouter>
             <AppRoutes />
         </BrowserRouter>
       </>
